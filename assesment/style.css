@@ -22,7 +22,7 @@ figure {
     padding: 3px;
     text-align: center;
   }
-  
+
   body {
     display: flex;
     flex-direction: column;
@@ -37,4 +37,7 @@ footer {
     padding: 1em;
     background-color: #f1f1f1;
 }
-  
+p {
+    text-align: center;
+    font-family: sans-serif;
+}
