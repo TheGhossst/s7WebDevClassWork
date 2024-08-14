@@ -1,0 +1,10 @@
+.nav-bar-items{
+    display: inline-flex;
+    padding-left: 70px;
+    text-align: justify;
+}
+
+.nav-bar-title{
+    font-size: 30px;
+    display: inline;
+}
