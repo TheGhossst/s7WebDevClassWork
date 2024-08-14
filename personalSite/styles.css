@@ -74,19 +74,6 @@ body {
     color: #666;
 }
 
-strong {
-    color: #333;
-}
-
-.profile-details a {
-    color: #333;
-    text-decoration: none;
-}
-
-.profile-details a:hover {
-    text-decoration: underline;
-}
-
 .footer {
     background-color: #dcdcdc;
     padding: 20px 0;
