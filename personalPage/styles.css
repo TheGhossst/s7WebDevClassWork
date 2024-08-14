@@ -1,10 +1,14 @@
-.nav-bar-items{
-    display: inline-flex;
-    padding-left: 70px;
-    text-align: justify;
+body, ul {
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar-title{
-    font-size: 30px;
-    display: inline;
+.nav-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
+
