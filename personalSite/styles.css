@@ -60,28 +60,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.profile {
-    text-align: center;
-    margin-top: 20px;
-}
-
 .profile-image {
-    width: 150px;
+    width: 200px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-}
-
-.profile-details h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.profile-details p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #666;
 }
 
 .footer {
@@ -137,4 +120,18 @@ body {
 .container-items{
     margin-left: 22px;
     margin-bottom: 10px;
+}
+
+.card-container{
+    width: 450px;
+    justify-content: space-around;
+    display: flex;
+    margin: 150px auto;
+    /* border: 2px dotted blue; */
+    padding: 20px;
+    text-align: center;
+    background-color: #ddebf8;
+    border-bottom: 7px solid #d8cefe;
+    border-top: 7px solid #d8cefe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
