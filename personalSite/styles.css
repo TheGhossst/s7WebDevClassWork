@@ -113,6 +113,7 @@ main {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    padding-right: 25px;
 }
 
 .footer {
