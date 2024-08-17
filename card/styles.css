@@ -12,7 +12,9 @@ body {
     justify-content: space-around;
     display: flex;
     margin: 0 auto;
-    border: 2px dotted blue;
+    /* border: 2px dotted blue; */
     padding: 20px;
     text-align: center;
+    background-color: #ddebf8;
+    border-bottom: 7px solid #d8cefe
 }
