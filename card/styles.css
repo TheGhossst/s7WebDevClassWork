@@ -1,11 +1,18 @@
-.body{
-    display: block;
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .profile-image{
     width: 200px;
 }
 
 .card-container{
-    justify-content: center;
-    display:flex;
+    width: 450px;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    border: 2px dotted blue;
+    padding: 20px;
+    text-align: center;
 }
