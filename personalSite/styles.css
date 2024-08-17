@@ -13,6 +13,11 @@ html, body {
 
 main {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 .nav-bar-header {
@@ -58,7 +63,6 @@ main {
     background-color: transparent;
     width: 450px;
     height: 300px;
-    margin: 150px auto;
     perspective: 1000px;
 }
 
