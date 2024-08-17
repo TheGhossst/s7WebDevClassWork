@@ -1,0 +1,11 @@
+.body{
+    display: block;
+}
+.profile-image{
+    width: 200px;
+}
+
+.card-container{
+    justify-content: center;
+    display:flex;
+}
