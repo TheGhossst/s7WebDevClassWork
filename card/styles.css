@@ -11,10 +11,12 @@ body {
     width: 450px;
     justify-content: space-around;
     display: flex;
-    margin: 0 auto;
+    margin: 150px auto;
     /* border: 2px dotted blue; */
     padding: 20px;
     text-align: center;
     background-color: #ddebf8;
-    border-bottom: 7px solid #d8cefe
+    border-bottom: 7px solid #d8cefe;
+    border-top: 7px solid #d8cefe;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
