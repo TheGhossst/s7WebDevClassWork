@@ -103,10 +103,32 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+.container {
+    width: 140px;
+    border: 1px solid #b3b3ff;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-color: #f7f4ff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: start;
+}
+
+.container ul {
+    padding-left: 20px;
+    list-style-type: disc; 
+}
+
+.container li {
+    margin-bottom: 5px;
+}
+
 
 .flipped .flip-card-inner {
     transform: rotateY(180deg);
