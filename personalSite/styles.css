@@ -199,6 +199,32 @@ main {
     padding-right: 25px;
 }
 
+.bucket-list-container > h2 {
+    margin: 20px auto;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bucket-list-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+.bucket-list-table th, .bucket-list-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 .footer {
     background-color: #dcdcdc;
     padding: 20px 0px 0px 0px;
