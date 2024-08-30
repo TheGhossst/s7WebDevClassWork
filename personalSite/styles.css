@@ -74,6 +74,41 @@ main {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .nav-bar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-bar-list.active {
+        display: flex;
+    }
+
+    .nav-bar-item {
+        width: 100%;
+    }
+
+    .nav-bar-item a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+}
+
 .flip-card {
     background-color: transparent;
     width: 450px;
