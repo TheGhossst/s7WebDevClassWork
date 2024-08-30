@@ -27,3 +27,12 @@ function flipCard(content) {
 function confirmLeaving() {
     return confirm("You are leaving the page to view the resume. Do you want to proceed?");
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-bar-list');
+
+    navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+});

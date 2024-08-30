@@ -24,8 +24,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    /*background-color: #1a1f71;*/
+    padding: 15px 30px;
     background-color: #333;
     color: white;
     position: sticky;
@@ -35,8 +34,10 @@ main {
 }
 
 .nav-bar-title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
 .nav-bar-list {
@@ -46,19 +47,65 @@ main {
 }
 
 .nav-bar-item {
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-bar-item a {
     text-decoration: none;
     color: white;
     padding: 8px 16px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 20px;
 }
 
 .nav-bar-item a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-bar-list.active {
+        display: flex;
+    }
+
+    .nav-bar-item {
+        width: 100%;
+    }
+
+    .nav-bar-item a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
 }
 
 .flip-card {
