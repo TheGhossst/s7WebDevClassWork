@@ -6,6 +6,7 @@ body, ul {
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -25,12 +26,13 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    /*background-color: #1a1f71;*/
     background-color: #333;
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 30px 8px rgba(36, 36, 36, 0.1);
+    box-shadow: 0 10px 8px rgba(36, 36, 36, 0.1);
 }
 
 .nav-bar-title {
@@ -55,7 +57,7 @@ main {
     text-decoration: none;
     color: white;
     padding: 8px 16px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
     border-radius: 20px;
 }
 
@@ -63,7 +65,6 @@ main {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
-
 .nav-toggle {
     display: none;
     background: none;
@@ -71,41 +72,6 @@ main {
     color: white;
     font-size: 24px;
     cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-bar-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-bar-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        margin-top: 15px;
-    }
-
-    .nav-bar-list.active {
-        display: flex;
-    }
-
-    .nav-bar-item {
-        width: 100%;
-    }
-
-    .nav-bar-item a {
-        display: block;
-        padding: 10px 0;
-    }
-
-    .nav-toggle {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 30px;
-    }
 }
 
 .flip-card {
@@ -196,59 +162,6 @@ main {
     border-radius: 50%;
     margin-bottom: 20px;
     padding-right: 25px;
-}
-
-.bucket-list-container > h2 {
-    margin: 20px auto;
-    font-size: 32px;
-    font-weight: bold;
-    color: #2c3e50;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.bucket-list-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-}
-
-.bucket-list-table th, .bucket-list-table td {
-    padding: 15px 20px;
-    text-align: left;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.bucket-list-table th {
-    background-color: #3498db;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #ffffff;
-    letter-spacing: 1px;
-}
-
-.bucket-list-table td {
-    font-size: 15px;
-    color: #34495e;
-}
-
-.bucket-list-table tr:last-child td {
-    border-bottom: none;
-}
-
-.bucket-list-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.bucket-list-table tr:hover {
-    background-color: #ecf0f1;
-    transition: background-color 0.3s ease;
 }
 
 .footer {
