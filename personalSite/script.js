@@ -23,9 +23,14 @@ function flipCard(content) {
             bucketListContainer.style.display = 'none';
         }
     } else if (content === 'bucketList') {
-        flipCard.classList.add('flipped');
-        aboutMeContainer.style.display = 'none';
-        bucketListContainer.style.display = 'block';
+        if (bucketListContainer.style.display === 'block') {
+            flipCard.classList.remove('flipped');
+            bucketListContainer.style.display = 'none';
+        } else {
+            flipCard.classList.add('flipped');
+            bucketListContainer.style.display = 'block';
+            aboutMeContainer.style.display = 'none';
+        }
     }
 }
 
