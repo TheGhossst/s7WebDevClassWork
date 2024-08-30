@@ -225,6 +225,15 @@ main {
     border-bottom: 1px solid #e0e0e0;
 }
 
+.bucket-list-table th {
+    background-color: #3498db;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
 .footer {
     background-color: #dcdcdc;
     padding: 20px 0px 0px 0px;
