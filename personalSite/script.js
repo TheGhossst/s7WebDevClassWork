@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     let originalContent;
-
+    let paused = true;
     function transformToMusicPlayer() {
         const flipCard = document.querySelector('.flip-card');
         const flipCardInner = document.querySelector('.flip-card-inner');
@@ -92,6 +92,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     </div>
                 </div>
             `;
+            let sound = document.createElement("audio");
+            sound.src = "./songs/Biscotti.mp3"
+            sound.volume = 0.1;
+            document.getElementsByClassName("music-player")[0].addEventListener('click', () => {
+                if (paused) {
+                    sound.play();
+                    sound.addEventListener('timeupdate', (e) =>{
+                        let currentTime = sound.currentTime
+                        let duration = sound.duration
+                        let result = (currentTime / duration)
+                        //console.log(`Result -> ${result * 100}`)
+                        document.getElementsByClassName("progress")[0].style.width =`${result * 100}%`
+                        document.getElementsByClassName("current-time")[0].textContent =  `${('0'+Math.floor(currentTime / 60)).slice(-2)}:${('0' + Math.floor(currentTime % 60)).slice(-2)}` 
+                        document.getElementsByClassName("total-time")[0].textContent = `${('0'+Math.floor(duration / 60)).slice(-2)}:${('0' + Math.floor(duration % 60)).slice(-2)}` 
+                    })
+                    paused = false 
+                }
+                else{
+                    sound.pause()
+                    paused = true
+                }
+            })
+            
         } else {
             flipCard.classList.remove('music-player-mode');
             flipCardInner.innerHTML = originalContent;
