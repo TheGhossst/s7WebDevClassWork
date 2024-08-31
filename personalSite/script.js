@@ -38,11 +38,30 @@ function confirmLeaving() {
     return confirm("You are leaving the page to view the resume. Do you want to proceed?");
 }
 
+const colors = [
+    "#FDBB2D",
+    "#3A1C71",
+    "#00d2ff",
+    "#3a47d5",
+]
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const navToggle = document.querySelector('.nav-toggle');
     const navList = document.querySelector('.nav-bar-list');
 
     navToggle.addEventListener('click', () => {
         navList.classList.toggle('active');
+    });
+
+    const profileImage = document.querySelector('.profile-image');
+    const body = document.body;
+    const originalBackgroundColor = getComputedStyle(body).backgroundColor;
+
+    profileImage.addEventListener('mouseenter', () => {
+        body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]; 
+    });
+
+    profileImage.addEventListener('mouseleave', () => {
+        body.style.backgroundColor = originalBackgroundColor; 
     });
 });
