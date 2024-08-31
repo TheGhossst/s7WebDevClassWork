@@ -39,10 +39,11 @@ function confirmLeaving() {
 }
 
 const colors = [
-    "#FDBB2D",
-    "#3A1C71",
-    "#00d2ff",
-    "#3a47d5",
+    "#FFD1DC", // Light pink
+    "#BDFCC9", // Light green
+    "#B0E0E6", // Powder blue
+    "#FAFAD2", // Light goldenrod yellow
+    "#E6E6FA"  // Lavender
 ]
 
 document.addEventListener('DOMContentLoaded', (event) => {
