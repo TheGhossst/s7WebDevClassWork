@@ -65,4 +65,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
     profileImage.addEventListener('mouseleave', () => {
         body.style.backgroundColor = originalBackgroundColor; 
     });
+
+    let originalContent;
+
+    function transformToMusicPlayer() {
+        const flipCard = document.querySelector('.flip-card');
+        const flipCardInner = document.querySelector('.flip-card-inner');
+        
+        if (!flipCard.classList.contains('music-player-mode')) {
+            originalContent = flipCardInner.innerHTML;
+            
+            flipCard.classList.add('music-player-mode');
+            flipCardInner.innerHTML = `
+                <div class="music-player">
+                    <div class="album-cover"></div>
+                    <div class="song-info">
+                        <div class="song-title">Song Title - Biscotti in the air</div>
+                        <div class="artist-name">Artist - Juice WRLD</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="time-info">
+                        <span class="current-time">2:27</span>
+                        <span class="total-time">6:34</span>
+                    </div>
+                </div>
+            `;
+        } else {
+            flipCard.classList.remove('music-player-mode');
+            flipCardInner.innerHTML = originalContent;
+        }
+    }
+
+    document.getElementById('musicBtn').addEventListener('click', function(event) {
+        event.preventDefault();
+        transformToMusicPlayer();
+    });
 });
