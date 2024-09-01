@@ -19,6 +19,7 @@ main {
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 .nav-bar-header {
@@ -260,7 +261,7 @@ main {
     background-color: #dcdcdc;
     padding: 20px 0px 0px 0px;
     text-align: center;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     border-top: 1px solid #ddd;
     width: 100%;
     flex-shrink: 0;
@@ -345,7 +346,7 @@ main {
 }
 
 .progress {
-    width: 70%;
+    width: 1%;
     height: 100%;
     background: linear-gradient(90deg, #1db954, #1ed760);
     border-radius: 3px;
