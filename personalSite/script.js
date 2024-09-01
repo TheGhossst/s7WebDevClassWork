@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             let sound = document.createElement("audio");
             sound.src = "./songs/Biscotti.mp3"
             sound.volume = 0.1;
-            document.getElementsByClassName("music-player")[0].addEventListener('click', () => {
+            document.getElementsByClassName("album-cover")[0].addEventListener('click', () => {
                 if (paused) {
                     sound.play();
                     sound.addEventListener('timeupdate', (e) =>{
