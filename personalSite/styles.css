@@ -25,7 +25,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 10px 30px;
     /*background-color: #1a1f71;*/
     background-color: #333;
     color: white;
@@ -220,7 +220,7 @@ main {
 }
 
 .bucket-list-table th, .bucket-list-table td {
-    /*padding: 15px 20px;*/
+    /*padding: 5px 20px;*/
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
@@ -259,12 +259,10 @@ main {
     background-color: #dcdcdc;
     padding: 20px 0px 0px 0px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
     border-top: 1px solid #ddd;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
+    flex-shrink: 0;
 }
 
 .footer-icons {
