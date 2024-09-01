@@ -309,6 +309,7 @@ main {
 }
 
 .album-cover {
+    position: relative;
     background-image: url("images/biscotti.jpeg");
     background-size: contain;
     width: 260px;
@@ -336,15 +337,19 @@ main {
 }
 
 .progress-bar {
-    height: 4px;
+    height: 6px;
     background-color: #555;
     margin-bottom: 10px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .progress {
     width: 70%;
     height: 100%;
-    background-color: white;
+    background: linear-gradient(90deg, #1db954, #1ed760);
+    border-radius: 3px;
+    transition: width 0.3s ease;
 }
 
 .time-info {
@@ -361,4 +366,17 @@ main {
 
 .volume-control input {
     width: 100%;
+}
+
+.play-instruction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: opacity 0.5s ease-out;
 }

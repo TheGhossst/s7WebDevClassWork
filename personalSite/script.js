@@ -78,7 +78,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             flipCard.classList.add('music-player-mode');
             flipCardInner.innerHTML = `
                 <div class="music-player">
-                    <div class="album-cover"></div>
+                    <div class="album-cover">
+                        <div class="play-instruction">Click the cover to play/pause</div>
+                    </div>
                     <div class="song-info">
                         <div class="song-title">Song Title - Biscotti in the air</div>
                         <div class="artist-name">Artist - Juice WRLD</div>
@@ -92,6 +94,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     </div>
                 </div>
             `;
+            setTimeout(() => {
+                const instruction = document.querySelector('.play-instruction');
+                if (instruction) {
+                    instruction.style.opacity = '0';
+                }
+            }, 2000);
+
             let sound = document.createElement("audio");
             sound.src = "./songs/Biscotti.mp3"
             sound.volume = 0.1;
