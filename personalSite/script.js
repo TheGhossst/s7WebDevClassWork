@@ -134,4 +134,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
         event.preventDefault();
         transformToMusicPlayer();
     });
+
+    document.getElementById('movieBtn').addEventListener('click', function(event) {
+        event.preventDefault();
+        transformToYouTubePlayer('https://youtu.be/qkBx0gMGuhY?si=ymxQyCiQH4AMY5UP');
+    });
+
+    function transformToYouTubePlayer(videoUrl) {
+        const flipCard = document.querySelector('.flip-card');
+        const flipCardInner = document.querySelector('.flip-card-inner');
+        
+        if (!flipCard.classList.contains('youtube-player-mode')) {
+            originalContent = flipCardInner.innerHTML;
+            
+            flipCard.classList.add('youtube-player-mode');
+            flipCardInner.innerHTML = `
+                <div class="youtube-container">
+                    <iframe src="https://www.youtube.com/embed/qkBx0gMGuhY" title="22 JUMP STREET my names jeff Clip  Channing Tatum, Jonah Hill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            `;
+        } else {
+            flipCard.classList.remove('youtube-player-mode');
+            flipCardInner.innerHTML = originalContent;
+        }
+    }
 });
