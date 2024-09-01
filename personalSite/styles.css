@@ -361,14 +361,6 @@ main {
     margin-bottom: 20px;
 }
 
-.volume-control {
-    margin-bottom: 20px;
-}
-
-.volume-control input {
-    width: 100%;
-}
-
 .play-instruction {
     position: absolute;
     top: 50%;
