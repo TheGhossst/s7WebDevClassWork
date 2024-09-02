@@ -59,11 +59,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const originalBackgroundColor = getComputedStyle(body).backgroundColor;
 
     profileImage.addEventListener('mouseenter', () => {
-        body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]; 
+        body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        //profileImage.src = "images/picture.jpg"
     });
 
     profileImage.addEventListener('mouseleave', () => {
         body.style.backgroundColor = originalBackgroundColor; 
+        //profileImage.src = "images/greninja.png";
     });
 
     let originalContent;
