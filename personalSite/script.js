@@ -158,4 +158,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             flipCardInner.innerHTML = originalContent;
         }
     }
+
+    document.getElementById('footerButton').addEventListener('click', function() {
+        alert('Welcome');
+    });
 });
