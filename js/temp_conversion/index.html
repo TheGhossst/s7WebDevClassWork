@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f8;
+            }
+            .converter {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .converter label {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            .converter input {
+                border: none;
+                border-bottom: 2px solid #a3a1a1;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 1rem;
+                color: black;
+                outline: none;
+                margin-bottom: 15px;
+            }
+            .converter > button {
+                padding: 8px 15px;
+                border: none;
+                border-radius: 5px;
+                background-color: #dfdfdf;
+                color: #100f0f;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .converter button:hover {
+                background-color: #797979;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="converter-container" style = 'display: flex;gap: 20px;padding: 30px;border: 1px solid #ccc;border-radius: 10px;background-color: #ffffff;box-shadow: 25px 25px 15px rgba(181, 225, 3, 0.1);'>
+            <div class="converter">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="text" id="fahrenheit" placeholder="Enter °F" />
+                <button id = 'celsius-btn'>Convert to Celsius</button>
+                <p id="celsiusResult"></p>
+            </div>
+
+            <div class="converter">
+                <label for="celsius">Celsius</label>
+                <input type="text" id="celsius" placeholder="Enter °C" />
+                <button id = 'fahrenheit-btn'>Convert to Fahrenheit</button>
+                <p id="fahrenheitResult"></p>
+            </div>
+        </div>
+        <script src = 'script.js'></script>
+    </body>
+</html>
